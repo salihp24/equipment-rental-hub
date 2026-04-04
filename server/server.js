@@ -5,6 +5,7 @@ import connectDB from "./config/db.js";
 import { errorHandler } from "./middleware/errorMiddleware.js";
 
 import authRoutes from "./routes/authRoutes.js"
+import equipmentRoutes from "./routes/equipmentRoutes.js"
 
 dotenv.config();
 
@@ -19,6 +20,8 @@ app.use(express.urlencoded({ extended: true }));
 
 // Routes
 app.use("/api/auth", authRoutes);
+app.use("/api/equipment", equipmentRoutes);
+
 
 
 
