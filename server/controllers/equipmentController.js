@@ -1,5 +1,5 @@
 import asyncHandler from "express-async-handler";
-import Equipment from "../models/Equipment.js";
+import Equipment from "../models/EquipmentModel.js";
 
 // @POST /api/equipment
 // Private — owner only

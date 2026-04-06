@@ -6,6 +6,7 @@ import { errorHandler } from "./middleware/errorMiddleware.js";
 
 import authRoutes from "./routes/authRoutes.js"
 import equipmentRoutes from "./routes/equipmentRoutes.js"
+import bookingRoutes from "./routes/bookingRoutes.js"
 
 dotenv.config();
 
@@ -21,7 +22,7 @@ app.use(express.urlencoded({ extended: true }));
 // Routes
 app.use("/api/auth", authRoutes);
 app.use("/api/equipment", equipmentRoutes);
-
+app.use("/api/bookings", bookingRoutes)
 
 
 
